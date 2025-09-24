@@ -1,16 +1,22 @@
 
-body {
-  background: #f9f9f9;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #344054;
-  margin: 0px;
-  padding: 0px;
-  width: 100vw;
-  height: 120vh;
-  overflow-x: hidden;
+// body {
+//   background: #f9f9f9;
+//   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+//   color: #344054;
+//   margin: 0px;
+//   padding: 0px;
+//   width: 100vw;
+//   height: 120vh;
+//   overflow-x: hidden;
   
+// }
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #F7F7F7 ;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0%;
 }
-
 .welcome {
   background-color: orange;
   width: 60dvw;
@@ -24,15 +30,17 @@ body {
 }
 header {
 z-index: 90 !important;
- width: 100vw !important;
+
 
 }
 nav {
   position: fixed !important;
   top: 0 !important;
-  width: 100vw !important;
+  left: 0 !important; /* Agregar esta línea */
+  width: 100vw;
   height: 40px;
-  padding: 20px;
+ padding-top: 20px;
+ padding-bottom: 20px;
   border-bottom: #eaecf0 2px solid;
   background-color: white;
   font-size: large;
@@ -40,6 +48,10 @@ nav {
   gap: 10px;
 }
 
+.nav-container {
+  justify-content: space-between; 
+  width: 80%;
+}
 .nav-list {
   padding: 0px;
   gap: 20px;
@@ -170,15 +182,10 @@ nav {
   }
 }
 
-body{
-  font-family: "Helvetica Neue";
-  background-color: #F7F7F7 ;
-  display: flex;
-  justify-content: center;
-  margin: 5% 0%;
-}
+
 .pagina{
   width: 80%;
+  margin-top: 10px;
 }
 .welcome{
   background-color: white;
@@ -555,6 +562,11 @@ body{
   }
   .pagina{
     width: 100%;
+     margin-top: 90px;
+  }
+  .nav-container {
+    justify-content: space-between;
+     width: 100%;
   }
   .contenedor{
     .lateral{
