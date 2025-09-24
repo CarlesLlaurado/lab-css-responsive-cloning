@@ -4,8 +4,10 @@ body {
   color: #344054;
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 100vw;
+  height: 120vh;
   overflow-x: hidden;
+  
 }
 
 .welcome {
@@ -19,20 +21,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+header {
+z-index: 90 !important;
+ width: 100vw !important;
 
+}
 nav {
-  
-  width: 100vw;
-  height: 80px;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100vw !important;
+  height: 40px;
+  padding: 20px;
   border-bottom: #eaecf0 2px solid;
   background-color: white;
   font-size: large;
   justify-content: space-evenly !important;
+  gap: 10px;
 }
 
 .nav-list {
   padding: 0px;
-  gap: 40px;
+  gap: 20px;
 }
 .nav-list li {
   list-style: none;
@@ -44,12 +53,12 @@ nav {
 }
 
 .logo {
-  width: 60px;
+  width: 50px;
 }
 .lupa {
   width: 20px;
   height: 20px;
-  position: fixed;
+  position: absolute;
   margin-right: 170px;
 }
 .nav-input {
@@ -68,7 +77,7 @@ nav {
   padding: 10px;
   border: none;
   gap: 5px !important;
-
+  width: 100px;
   font-size: medium;
   cursor: pointer;
 }
@@ -93,25 +102,46 @@ nav {
 }
 
 .search-laptop {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
-  border: 2px solid black;
+  border: 2px solid #85889C;
   display: none;
+  background-color: white;
 }
 .search-laptop svg {
   height: 20px;
   width: 20px;
 }
 
+  .mobile-menu {
+    display: none;
+  }
 @media (max-width: 767px) {
+    nav {
+
+  justify-content: space-between !important;
+
+  }
+
+
   .nav-links {
     display: none;
   }
  
+  .search-laptop {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+    .search-desktop {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1099px) {
 
   nav {
 
@@ -133,7 +163,7 @@ nav {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
    .show-desktop {
     display: list-item;
   }
