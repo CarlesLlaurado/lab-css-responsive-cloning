@@ -12,6 +12,7 @@ body {
 
 .welcome {
   background-color: white;
+  border: 1px solid lightgrey;
   width: 100%;
   height: 70px;
   display: flex;
@@ -111,9 +112,16 @@ body {
   color: grey;
 }
 .contenedor .principal .popular .popularsection .sectiontext .sectionbuttons {
-  padding-top: 20px;
+  padding-top: 23px;
   display: flex;
   gap: 10px;
+}
+.contenedor .principal .popular .popularsection .sectiontext .sectionbuttons button {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+  align-items: center;
+  height: 20px;
 }
 .contenedor .principal .popular .popularsection .sectionphone {
   align-self: flex-end;
@@ -166,11 +174,19 @@ body {
 .contenedor .principal .todaysection .sectiontext .p2 {
   font-size: smaller;
   color: grey;
+  display: 1;
 }
 .contenedor .principal .todaysection .sectiontext .sectionbuttons {
   padding-top: 55px;
   display: flex;
   gap: 10px;
+}
+.contenedor .principal .todaysection .sectiontext .sectionbuttons button {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+  align-items: center;
+  height: 20px;
 }
 .contenedor .principal .todaysection .sectionphone {
   align-self: flex-end;
